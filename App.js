@@ -1,15 +1,27 @@
 let array = [1, 2, 3, 4];
 
-mostarArray(array);
+
+
+    mostarArray(array);
+    console.log("------------");
+    agregarElementos(array);
+    mostarArray(array);
 
 function mostarArray (array) {
     
-    
-    while(array.length > 0){
-        let elemento = array.shift();
+    let j = 0;
+    while(j < array.length){
+        //let elemento = array.shift();
         
-        console.log(elemento);
+        console.log(array[j]);
+        j++;
     }
     
 }
 
+function agregarElementos(array){
+
+    array.push(5);    
+
+
+}
