@@ -1,5 +1,15 @@
-let texto = document.getElementById('texto');
+let array = [1, 2, 3, 4];
 
-var texto2 = 'juan';
+mostarArray(array);
 
-texto.innerHTML = texto2;
+function mostarArray (array) {
+    
+    
+    while(array.length > 0){
+        let elemento = array.shift();
+        
+        console.log(elemento);
+    }
+    
+}
+
