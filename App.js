@@ -1,13 +1,14 @@
 let array = [1, 2, 3, 4];
 
-
-
     mostarArray(array);
     console.log("------------");
     //agregarElementos(array);
     //buscarElementoIndexOf(array);
-    eliminarElemento(array);
+    //eliminarElemento(array);
+    editarElemento(array);
+    console.log("------------");
     mostarArray(array);
+    
 
 function mostarArray (array) {
     
@@ -44,7 +45,39 @@ function eliminarElemento(array){
 
 }
 
-function buscarElemento(array){8
+function buscarElementoIndexOf(array){
+    
+    
+    let input = prompt("Buscar elemento:");
+    let numero = parseInt(input);
+    
+    //console.log(numero);
+    
+    let indice = array.indexOf(numero);
+    //console.log("el numero fue encontrado en la pocision: ", indice);
+    
+    return indice;
+}
+
+
+function editarElemento(array){
+    
+    
+    let indice = buscarElementoIndexOf(array);
+    
+    let input = prompt("editar elemento:");
+    let numero = parseInt(input);
+    
+    console.log("valor es: ", array[indice]);
+    array[indice] = numero;
+    
+    
+}
+
+
+//esta funcion no se esta usando, la dejo x si las moscas
+/*
+function buscarElemento(array){
 
     var numero = prompt("Buscar elemento:");
 
@@ -61,17 +94,4 @@ function buscarElemento(array){8
         console.log("el numero no fue encontrado ");
     }
 }
-
-function buscarElementoIndexOf(array){
-
-
-    let input = prompt("Buscar elemento:");
-    let numero = parseInt(input);
-
-    //console.log(numero);
-    
-    let indice = array.indexOf(numero);
-    //console.log("el numero fue encontrado en la pocision: ", indice);
-
-    return indice;
-}
+*/
