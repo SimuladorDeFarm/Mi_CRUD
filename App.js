@@ -1,3 +1,6 @@
+//este programa es la base para un CRUD mediante un vector
+
+//vector 
 let array = [1, 2, 3, 4];
 
     mostarArray(array);
@@ -9,7 +12,7 @@ let array = [1, 2, 3, 4];
     console.log("------------");
     mostarArray(array);
     
-
+//muestra todos los elementos del array
 function mostarArray (array) {
     
     let j = 0;
@@ -22,6 +25,7 @@ function mostarArray (array) {
     
 }
 
+//pide al usario que agrege un numero al final del vector
 function agregarElementos(array){
 
     var numero = prompt("Agregar numero:");
@@ -29,6 +33,7 @@ function agregarElementos(array){
 
 }
 
+//eliomina el elemento seleccionado
 function eliminarElemento(array){
 
         let indice = buscarElementoIndexOf(array);
@@ -45,6 +50,7 @@ function eliminarElemento(array){
 
 }
 
+//busca un elemento mediante el valor y retorna la posicion del valor
 function buscarElementoIndexOf(array){
     
     
@@ -60,6 +66,7 @@ function buscarElementoIndexOf(array){
 }
 
 
+//edita un elemento seleccionado
 function editarElemento(array){
     
     
